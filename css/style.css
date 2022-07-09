@@ -57,6 +57,7 @@ label+select {
     /* margin-top: 10px; */
     right: 0;
 }
+
 #nick-div {
     margin-bottom: 10px;
 }
@@ -84,15 +85,16 @@ button {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     transition: 0.2s;
-    
+
 
 }
-button:hover{
+
+button:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(238, 27, 27);
     transform: scale(1.03) translateX(50%);
     cursor: pointer;
-    
+
 }
 
 
@@ -103,16 +105,37 @@ footer {
     background-color: black;
 }
 
-@media screen and (max-width:404px) {
-   #wrap-content {
-    height: 100%;
-    max-height: 450px;
-   }
-    
+@media screen and (max-width:607px) {
+    #wrap-content {
+        height: 100%;
+        max-height: 350px;
+    }
+
 }
 
-input:focus, select:focus {
-    border-right: 5px solid rgb(238, 27, 27) ;
+@media screen and (max-width:404px) {
+    #wrap-content {
+        height: 100%;
+        max-height: 400px;
+    }
+
+    label,
+    label+input,
+    label+select {
+        display: inline-block;
+        width: 100px;
+        outline: none;
+        transition: border-right 0.2s;
+
+        /* margin-top: 10px; */
+        right: 0;
+    }
+
+}
+
+input:focus,
+select:focus {
+    border-right: 5px solid rgb(238, 27, 27);
 }
 
 img {
@@ -120,4 +143,3 @@ img {
     max-width: 180px;
     z-index: 1;
 }
-
