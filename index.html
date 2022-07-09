@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Champion Select</title>
 </head>
 
 <body>
     <main>
-        <div class="column-left"></div>
-        <div class="column-center">
-            <div class="column-center top">
-                <div class="roles"></div>
-                <input type="text">
-            </div>
-           
+        <img src="images/LoL_icon2.png" alt="League of Legends logo icon">
+        <div id="wrap-content">
+            <h1>CHAMPION SELECT PROJECT</h1>
+            <p>Welcome to a simulation of LOL Champion select! </p>
+            <form>
+                <div id="nick-and-roles">
+                    <div id="nick-div">
+                        <label for="nick">nickname:</label>
+                        <input placeholder="Nickname" id="nick" type="text">
+                    </div>
+                    <div id="role-div">
+                        <label for="roles">roll:</label>
+                        <select name="" id="roles">
+                            <option value="role-top">TOP</option>
+                            <option value="role-jg">Jungler</option>
+                            <option value="role-mid">MID</option>
+                            <option value="role-bottom">bottom</option>
+                            <option value="role-support">support</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">DONE</button>
+            </form>
         </div>
-        <div class="column-right"></div>
+        <footer>
+            <p>Learn only. All rights reserved to Riot Games.</p>
+        </footer>
     </main>
 </body>
 

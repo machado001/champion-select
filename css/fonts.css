@@ -1,0 +1,12 @@
+/* league font */
+@font-face {
+    font-family: 'Friz' ;
+    src: url(../fonts/Friz\ Quadrata\ Bold.otf) format('opentype'),url(../fonts/Friz\ Quadrata\ Italic.ttf) format('truetype'), url(../fonts/Friz\ Quadrata\ Regular.ttf) format('truetype'), url(../fonts/Friz\ Quadrata\ Std\ Medium.otf) format('opentype');
+    /* Tipos de format:
+    -opentype (otp)
+    -truetype (ttp)
+    -embedded-opentype
+    -truetype-aat (Apple Advances Typography)
+    -svg */
+
+} 

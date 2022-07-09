@@ -1,0 +1,123 @@
+* {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Friz';
+    text-transform: uppercase;
+}
+
+body {
+    background-image: url(../images/walpaper-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+
+}
+
+#wrap-content {
+    z-index: 0;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    padding: 50px;
+    height: 100%;
+    max-height: 300px;
+    background-color: rgb(20, 20, 20);
+}
+
+#nick-and-roles {
+    display: grid;
+    grid-template: 1fr 1fr /1fr;
+    justify-items: center;
+    /* background-color: aqua; */
+    margin: 20px 0;
+}
+
+label,
+label+input,
+label+select {
+    display: inline-block;
+    width: 150px;
+    outline: none;
+    transition: border-right 0.2s;
+
+    /* margin-top: 10px; */
+    right: 0;
+}
+#nick-div {
+    margin-bottom: 10px;
+}
+
+input,
+option,
+select,
+button {
+    color: black;
+    /* padding: 5px; */
+}
+
+form {
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+button {
+    position: absolute;
+    width: 100%;
+    max-width: 70px;
+    padding: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.2s;
+    
+
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 27, 27);
+    transform: scale(1.03) translateX(50%);
+    cursor: pointer;
+    
+}
+
+
+footer {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 30px;
+    background-color: black;
+}
+
+@media screen and (max-width:404px) {
+   #wrap-content {
+    height: 100%;
+    max-height: 450px;
+   }
+    
+}
+
+input:focus, select:focus {
+    border-right: 5px solid rgb(238, 27, 27) ;
+}
+
+img {
+    width: 100%;
+    max-width: 180px;
+    z-index: 1;
+}
+
