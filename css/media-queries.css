@@ -1,0 +1,26 @@
+@media screen and (max-width:607px) {
+    #wrap-content {
+        height: 100%;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width:404px) {
+    #wrap-content {
+        height: 100%;
+        max-height: 400px;
+    }
+
+    label,
+    label+input,
+    label+select {
+        display: inline-block;
+        width: 100px;
+        outline: none;
+        transition: border-right 0.2s;
+
+        /* margin-top: 10px; */
+        right: 0;
+    }
+
+}
